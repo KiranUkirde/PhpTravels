@@ -1,0 +1,179 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To verify customer is able to update his/her profile",
+        "description": "",
+        "id": "customer-profile-update;to-verify-customer-is-able-to-update-his/her-profile",
+        "after": [
+          {
+            "result": {
+              "duration": 619412700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90721348800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Customer is on login page",
+            "match": {
+              "location": "LoginSteps.customerIsOnLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2722191800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer logged in with valid credentials",
+            "match": {
+              "location": "LoginSteps.customerLoggedInWithValidCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2543098900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Customer update phone number as \"+31619445369\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "+31619445369",
+                  "offset": 33
+                }
+              ],
+              "location": "ProfileUpdate.customerUpdatePhoneNumberAsSomething(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 441123700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer is able to see new updates",
+            "match": {
+              "location": "ProfileUpdate.customerIsAbleToSeeNewUpdates()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Customer profile update",
+    "description": "",
+    "id": "customer-profile-update",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/CustomerProfileUpdate.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "To validate customer is able to login successfully",
+        "description": "",
+        "id": "to-verify-login-functionality;to-validate-customer-is-able-to-login-successfully",
+        "after": [
+          {
+            "result": {
+              "duration": 633682500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14463369400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Customer is on login page",
+            "match": {
+              "location": "LoginSteps.customerIsOnLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1259030300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Customer logged in with valid credentials",
+            "match": {
+              "location": "LoginSteps.customerLoggedInWithValidCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59007005400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Customer logged out and re login",
+            "match": {
+              "location": "LoginSteps.customerLoggedOutRelogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1889552100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer name \"Kiran\" is displayed on homepage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kiran",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginSteps.customerIsOnHomePage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To verify login functionality",
+    "description": "",
+    "id": "to-verify-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/Login.feature",
+    "tags": []
+  }
+]

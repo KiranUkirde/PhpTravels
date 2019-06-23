@@ -1,0 +1,4 @@
+Steps to Run project
+1) Open the project in Intellij
+2) Run Test runner class to run all the feature file or you can run the feature files individually.
+3) Test can be run from command line using mvn te.st note that you are in the project path on command line before running the test
